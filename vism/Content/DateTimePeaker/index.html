@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+</head>
+<body style="margin:5%">
+
+    <div class="container" >
+        <div class="row">
+            <div class='col-sm-4'>
+		<label>Date</label>
+                <div class="form-group">
+                    <div class='input-group date' id='datepicker'>
+                        <input type='text' class="form-control" id="date" placeholder="dd-mm-yyyy"/>
+                        <span class="input-group-addon" id="datelogo">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class='col-sm-4'>
+                <div class="form-group">
+		    <label>Time</label>
+                    <div class='input-group date' id='timepicker'>
+                        <input type='text' class="form-control" id="time" placeholder="hh:mm tt" />
+                        <span class="input-group-addon" id="timelogo">
+                            <span class="glyphicon glyphicon-time"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/moment.min.js"></script>
+<!--<script src="js/bn.min.js"></script> remove comment to use bangla font-->
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#datepicker').datetimepicker({
+                format: 'DD-MM-YYYY',
+                defaultDate: 'moment', //auto select current date
+                showClear: true,
+                showClose: true,
+                showTodayButton: true,
+                toolbarPlacement: 'bottom'
+            });
+            $('#date').on('click', function () {
+                $("#datelogo").trigger('click');
+            });
+            $('#timepicker').datetimepicker({
+	   //	format: 'HH:mm', //for 24 hour
+                format: 'LT',	//12 hour am/pm
+                defaultDate: 'moment', //auto select current time.
+                showClear: true,
+                showClose: true,
+                showTodayButton: true,
+                toolbarPlacement: 'bottom'
+            });
+            $('#time').on('click', function () {
+                $("#timelogo").trigger('click');
+            });
+        });
+    </script>
+</body>
+</html>

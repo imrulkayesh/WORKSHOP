@@ -1,0 +1,19 @@
+Insert into user_menu(url,title,description,parent_id,ordinal_position,is_enable)
+values ('~/UI/Reports/LicenseReports/LicenseChallanRpt.aspx','T.R. Challan Generate','T.R. Challan Generate',68,3,0)
+
+Insert into user_menu(url,title,description,parent_id,ordinal_position,is_enable)
+values ('~/UI/Reports/LicenseReports/LicenseDetailRpt.aspx','License Detail','License Detail',68,4,0)
+
+
+
+Insert into user_menu(url,title,description,parent_id,ordinal_position,is_enable)
+values ('~/UI/Reports/LicenseReports/LicenseMoneyReceipt.aspx','Money Receipt','Money Receipt',68,5,0)
+
+
+Insert into user_menu (url,title,description,parent_id,ordinal_position,
+is_enable)values ('~/UI/Admin/GatePass/Reports/SbPassReport.aspx','SB Pass Report','SB Pass Report',14,5,0)  
+
+Insert into user_menu(url,title,description,parent_id,ordinal_position,is_enable)
+values ('~/UI/Admin/License/LicenseFee.aspx','License Fees','License fees',48,12,0)
+
+

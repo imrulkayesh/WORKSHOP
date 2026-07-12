@@ -1,0 +1,6 @@
+Till now are not input data all legal Setup in legal software 
+And No data is inserted yet at Case Details.
+For details Step by step guide Please read attached manual.
+
+Golobal: http://apps.prangroup.com/ya/Login.aspx
+Local : http://172.17.4.28/ya/Login.aspx

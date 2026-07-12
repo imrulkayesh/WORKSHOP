@@ -1,0 +1,126 @@
+﻿.quick-cash .badge {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    padding: 1px 3px;
+}
+
+.height {
+    height: 35px;
+}
+
+.monthly-payment {
+    height: 220px;
+    overflow: auto;
+}
+
+.label {
+    font-size: 10pt;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.contents {
+    border: 1px dotted black;
+    padding: 5px;
+    width: 700px;
+}
+
+.name {
+    color: #18B5F0;
+}
+
+.left {
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+
+.right {
+    margin-left: 60px;
+    line-height: 50px;
+}
+
+.clear {
+    clear: both;
+}
+
+.breadcrumb {
+    margin: 0;
+}
+
+.admin-header {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.padding-bottom-15 {
+    padding-bottom: 15px;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.FormatRadioButtonList label {
+    margin-right: 20px;
+}
+
+.footerAll {
+    margin-top: 15px;
+}
+
+    .footerAll .container {
+        margin-top: 5px;
+    }
+
+.school-heading {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.red {
+    color: red;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+    .btn-file input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+
+.Star {
+    background-image: url(/Images/Star.gif);
+    height: 17px;
+    width: 17px;
+}
+.WaitingStar {
+    background-image: url(/Images/WaitingStar.gif);
+    height: 17px;
+    width: 17px;
+}
+
+.FilledStar {
+    background-image: url(/Images/FilledStar.gif);
+    height: 17px;
+    width: 17px;
+}
+.required
+{
+    color:red;
+}

@@ -1,0 +1,10 @@
+﻿.table tr th {
+    border:solid 1px #f2eeee;
+}
+.table tbody tr td {
+    border:solid 1px #f2eeee;
+}
+
+.table {
+   border:none;
+}

@@ -1,0 +1,864 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Action" xml:space="preserve">
+    <value>পদক্ষেপ</value>
+  </data>
+  <data name="BloodGroup" xml:space="preserve">
+    <value>রক্তের গ্রুপ</value>
+  </data>
+  <data name="BloodGroupSetup" xml:space="preserve">
+    <value>রক্তের গ্রুপ সেটআপ করুন</value>
+  </data>
+  <data name="Class" xml:space="preserve">
+    <value>শ্রেণী</value>
+  </data>
+  <data name="ClassSetup" xml:space="preserve">
+    <value>শ্রেণী সেটআপ করুন</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>তারিখ</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>বর্ণনা</value>
+  </data>
+  <data name="Designation" xml:space="preserve">
+    <value>পদবী</value>
+  </data>
+  <data name="DesignationSetup" xml:space="preserve">
+    <value>পদবী সেটআপ করুন</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>বিবরণ</value>
+  </data>
+  <data name="District" xml:space="preserve">
+    <value>জেলা</value>
+  </data>
+  <data name="DistrictSetup" xml:space="preserve">
+    <value>জেলা সেটআপ  করুন</value>
+  </data>
+  <data name="Division" xml:space="preserve">
+    <value>বিভাগ </value>
+  </data>
+  <data name="DivisionSetup" xml:space="preserve">
+    <value>বিভাগ সেটআপ  করুন</value>
+  </data>
+  <data name="ExamType" xml:space="preserve">
+    <value>পরীক্ষার ধরণ</value>
+  </data>
+  <data name="ExamTypeSetup" xml:space="preserve">
+    <value>পরীক্ষার ধরণ সেটআপ করুন</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>লিঙ্গ</value>
+  </data>
+  <data name="Gendersetup" xml:space="preserve">
+    <value>লিঙ্গ সেটআপ করুন</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>গ্রুপ</value>
+  </data>
+  <data name="GroupSetup" xml:space="preserve">
+    <value>গ্রুপ সেটআপ করুন</value>
+  </data>
+  <data name="IsDefault" xml:space="preserve">
+    <value>ডিফল্ট কি না</value>
+  </data>
+  <data name="NewsSetup" xml:space="preserve">
+    <value>সংবাদ সেটআপ করুন</value>
+  </data>
+  <data name="Profession" xml:space="preserve">
+    <value>পেশা</value>
+  </data>
+  <data name="ProfessionSetup" xml:space="preserve">
+    <value>পেশা সেটআপ করুন</value>
+  </data>
+  <data name="Qualification" xml:space="preserve">
+    <value>যোগ্যতা </value>
+  </data>
+  <data name="QualificationSetup" xml:space="preserve">
+    <value>যোগ্যতা সেটআপ করুন</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>পুন:স্থাপন করুন</value>
+  </data>
+  <data name="Religion" xml:space="preserve">
+    <value>ধর্ম</value>
+  </data>
+  <data name="ReligionSetup" xml:space="preserve">
+    <value>ধর্ম সেটআপ করুন</value>
+  </data>
+  <data name="RoleName" xml:space="preserve">
+    <value>ভূমিকার নাম</value>
+  </data>
+  <data name="RoleSetup" xml:space="preserve">
+    <value>ভূমিকা সেটআপ করুন</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>সংরক্ষণ করুন</value>
+  </data>
+  <data name="Section" xml:space="preserve">
+    <value>শাখা</value>
+  </data>
+  <data name="SectionSetup" xml:space="preserve">
+    <value>শাখা সেটআপ করুন</value>
+  </data>
+  <data name="Shift" xml:space="preserve">
+    <value>শিফট</value>
+  </data>
+  <data name="ShiftSetup" xml:space="preserve">
+    <value>শিফট সেটআপ করুন</value>
+  </data>
+  <data name="ShortDescription" xml:space="preserve">
+    <value>সংক্ষিপ্ত বর্ণনা</value>
+  </data>
+  <data name="SL" xml:space="preserve">
+    <value>ক্রমিক নং</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>বিষয় </value>
+  </data>
+  <data name="SubjectName" xml:space="preserve">
+    <value>বিষয়ের নাম</value>
+  </data>
+  <data name="Thana" xml:space="preserve">
+    <value>থানা</value>
+  </data>
+  <data name="ThanaSetup" xml:space="preserve">
+    <value>থানা সেটআপ  করুন</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>পদবি</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>বছর</value>
+  </data>
+  <data name="YearSetup" xml:space="preserve">
+    <value>বছর সেটআপ করুন</value>
+  </data>
+  <data name="ChooseIcon" xml:space="preserve">
+    <value>আইকন নির্বাচন</value>
+  </data>
+  <data name="CreatedBy" xml:space="preserve">
+    <value>তৈরি করেছেন</value>
+  </data>
+  <data name="CreatedDate" xml:space="preserve">
+    <value>তৈরির তারিখ</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>ভূমিকা</value>
+  </data>
+  <data name="Root" xml:space="preserve">
+    <value>রুট</value>
+  </data>
+  <data name="TaskList" xml:space="preserve">
+    <value>কার্য তালিকা</value>
+  </data>
+  <data name="TaskManager" xml:space="preserve">
+    <value>টাস্ক ম্যানেজার</value>
+  </data>
+  <data name="TaskToRole" xml:space="preserve">
+    <value>ভূমিকা ধার্য করুন</value>
+  </data>
+  <data name="TitleBangla" xml:space="preserve">
+    <value>শিরোনাম (বাংলা)</value>
+  </data>
+  <data name="TitleEnglidh" xml:space="preserve">
+    <value>শিরোনাম (ইংরেজি)</value>
+  </data>
+  <data name="URL" xml:space="preserve">
+    <value>লিংক</value>
+  </data>
+  <data name="ClassName" xml:space="preserve">
+    <value>শ্রেণির নাম</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>পাসওয়ার্ড নিশ্চিত করুন</value>
+  </data>
+  <data name="CreateUser" xml:space="preserve">
+    <value>ব্যবহারকারী তৈরি করুন</value>
+  </data>
+  <data name="Criteria" xml:space="preserve">
+    <value>নির্বাচন করুন </value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>ইমেইল</value>
+  </data>
+  <data name="Example" xml:space="preserve">
+    <value>উদাহরণ</value>
+  </data>
+  <data name="FailSystem" xml:space="preserve">
+    <value>ফেইল সিস্টেম</value>
+  </data>
+  <data name="Id" xml:space="preserve">
+    <value>ক্রমিক নং </value>
+  </data>
+  <data name="IsOptional" xml:space="preserve">
+    <value>ঐচ্ছিক কি না </value>
+  </data>
+  <data name="MarksEdit" xml:space="preserve">
+    <value>ফলাফল সংশোধন</value>
+  </data>
+  <data name="MarksEntry" xml:space="preserve">
+    <value>ফলাফল এন্ট্রি</value>
+  </data>
+  <data name="MarksOutof" xml:space="preserve">
+    <value>সর্বোচ্চ নাম্বার </value>
+  </data>
+  <data name="ObjectiveMarks" xml:space="preserve">
+    <value>নৈবত্তিক নাম্বার</value>
+  </data>
+  <data name="ObjectivePassMarks" xml:space="preserve">
+    <value>নৈবত্তিক বিষয়ের পাস নাম্বার</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>পাসওয়ার্ড</value>
+  </data>
+  <data name="RollNo" xml:space="preserve">
+    <value>ক্রমিক নং</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>অনুসন্ধান</value>
+  </data>
+  <data name="SubjectCategory" xml:space="preserve">
+    <value>বিষয়ের ধরন</value>
+  </data>
+  <data name="SubjectiveMarks" xml:space="preserve">
+    <value>সৃজনশীল নাম্বার</value>
+  </data>
+  <data name="SubjectivePassMarks" xml:space="preserve">
+    <value>সৃজনশীল  বিষয়ের পাস নাম্বার</value>
+  </data>
+  <data name="SubjecttoClass" xml:space="preserve">
+    <value>শ্রেণীতে বিষয় নির্ধারণ করুন</value>
+  </data>
+  <data name="UserManagement" xml:space="preserve">
+    <value>ইউজার ম্যানেজমেন্ট</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>ব্যবহারকারীর নাম</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>ঠিকানা</value>
+  </data>
+  <data name="AssignStudenttoClass" xml:space="preserve">
+    <value>নির্দিষ্ট  শ্রেণীতে ছাত্র-ছাত্রী নিযুক্ত করতে চান কি না?</value>
+  </data>
+  <data name="BirthCertificateNo" xml:space="preserve">
+    <value>জন্ম সনদপত্র নং</value>
+  </data>
+  <data name="ContactEducation" xml:space="preserve">
+    <value>যোগাযোগ / শিক্ষা</value>
+  </data>
+  <data name="DateofBirth" xml:space="preserve">
+    <value>জন্ম তারিখ</value>
+  </data>
+  <data name="Doyouwanttocreateadummyusernameandpassword" xml:space="preserve">
+    <value>আপনি একটি ডামি নাম এবং পাসওয়ার্ড তৈরি করতে চান না</value>
+  </data>
+  <data name="EndMarks" xml:space="preserve">
+    <value>শেষ নাম্বার</value>
+  </data>
+  <data name="FatherName" xml:space="preserve">
+    <value>পিতার নাম:</value>
+  </data>
+  <data name="Fees" xml:space="preserve">
+    <value>বেতন</value>
+  </data>
+  <data name="FeesforClass" xml:space="preserve">
+    <value>শ্রেণীর জন্য বেতন নির্ধারণ</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>হইতে</value>
+  </data>
+  <data name="GradeName" xml:space="preserve">
+    <value>গ্রেড নাম</value>
+  </data>
+  <data name="GradePoint" xml:space="preserve">
+    <value>গ্রেড পয়েন্ট</value>
+  </data>
+  <data name="Halfyearly" xml:space="preserve">
+    <value>অর্ধ - বাৎসরিক</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>মোবাইল</value>
+  </data>
+  <data name="MobileHome" xml:space="preserve">
+    <value>মোবাইল (বাড়ি)</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>মাস</value>
+  </data>
+  <data name="Monthly" xml:space="preserve">
+    <value>মাসিক</value>
+  </data>
+  <data name="MotherName" xml:space="preserve">
+    <value>মাতার নাম:</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>নাম</value>
+  </data>
+  <data name="NameBan" xml:space="preserve">
+    <value>নাম (বাংলা):</value>
+  </data>
+  <data name="NameEng" xml:space="preserve">
+    <value>নাম (ইংরেজি):</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>পরবর্তী</value>
+  </data>
+  <data name="PaymentSetup" xml:space="preserve">
+    <value>বেতন সেটআপ  করুন</value>
+  </data>
+  <data name="PaymentType" xml:space="preserve">
+    <value>বেতনের ধরন</value>
+  </data>
+  <data name="PersonalDetails" xml:space="preserve">
+    <value>ব্যক্তিগত বিবরণ</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>ফোন</value>
+  </data>
+  <data name="PhoneHome" xml:space="preserve">
+    <value>ফোন (বাড়ি) </value>
+  </data>
+  <data name="Photograph" xml:space="preserve">
+    <value>ছবি</value>
+  </data>
+  <data name="PracticalMarks" xml:space="preserve">
+    <value>ব্যবহারিক নাম্বার</value>
+  </data>
+  <data name="RegistratinNo" xml:space="preserve">
+    <value>নিবন্ধন নং</value>
+  </data>
+  <data name="RegNo" xml:space="preserve">
+    <value>রেজিঃ নং</value>
+  </data>
+  <data name="Roll" xml:space="preserve">
+    <value>রোল</value>
+  </data>
+  <data name="SBSMarks" xml:space="preserve">
+    <value>এস.বি.এস.  নাম্বার</value>
+  </data>
+  <data name="Showpassword" xml:space="preserve">
+    <value> পাসওয়ার্ড দেখুন </value>
+  </data>
+  <data name="StartMarks" xml:space="preserve">
+    <value>শুরুর নাম্বার</value>
+  </data>
+  <data name="StudentAccountInformation" xml:space="preserve">
+    <value>ছাত্র-ছাত্রীর অ্যাকাউন্টের তথ্য</value>
+  </data>
+  <data name="StudentInformation" xml:space="preserve">
+    <value>ছাত্র-ছাত্রীর তথ্য</value>
+  </data>
+  <data name="StudentList" xml:space="preserve">
+    <value>ছাত্র-ছাত্রীর তালিকা</value>
+  </data>
+  <data name="StudentPayment" xml:space="preserve">
+    <value>ছাত্র-ছাত্রীর বেতন</value>
+  </data>
+  <data name="StudentPaymentHistory" xml:space="preserve">
+    <value>ছাত্র-ছাত্রীর বেতনের বিবরণ</value>
+  </data>
+  <data name="StudentPersonalInformation" xml:space="preserve">
+    <value>ছাত্র-ছাত্রীর ব্যক্তিগত  তথ্য</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>সমর্পণ করুন</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>পর্যন্ত</value>
+  </data>
+  <data name="FatherEduQualification" xml:space="preserve">
+    <value>পিতার শিক্ষাগত যোগ্যতা</value>
+  </data>
+  <data name="FatherNationalID" xml:space="preserve">
+    <value>পিতার জাতীয় পরিচয়পত্র</value>
+  </data>
+  <data name="FatherPhoneNo" xml:space="preserve">
+    <value>পিতার ফোন নাম্বার</value>
+  </data>
+  <data name="FatherProfession" xml:space="preserve">
+    <value>পিতার পেশা</value>
+  </data>
+  <data name="FatherYearlyIncome" xml:space="preserve">
+    <value>পিতার বার্ষিক আয়</value>
+  </data>
+  <data name="MotherEduQualification" xml:space="preserve">
+    <value>মাতার শিক্ষাগত যোগ্যতা</value>
+  </data>
+  <data name="MotherNationalID" xml:space="preserve">
+    <value>মাতার জাতীয় পরিচয়পত্র</value>
+  </data>
+  <data name="MotherPhoneNo" xml:space="preserve">
+    <value>মাতার ফোন নাম্বার</value>
+  </data>
+  <data name="MotherProfession" xml:space="preserve">
+    <value>মাতার পেশা</value>
+  </data>
+  <data name="MotherYearlyIncome" xml:space="preserve">
+    <value>মাতার বার্ষিক আয়</value>
+  </data>
+  <data name="PermanentAddressSame" xml:space="preserve">
+    <value>স্থায়ী ঠিকানা একই কি না</value>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>পোস্ট কোড </value>
+  </data>
+  <data name="PostOffice" xml:space="preserve">
+    <value>ডাকঘর</value>
+  </data>
+  <data name="PresentAddress" xml:space="preserve">
+    <value>বর্তমান ঠিকানা</value>
+  </data>
+  <data name="StudentFatherInformation" xml:space="preserve">
+    <value>ছাত্র-ছাত্রীর  পিতার তথ্য</value>
+  </data>
+  <data name="StudentMotherInformation" xml:space="preserve">
+    <value>ছাত্র-ছাত্রীর  মাতার তথ্য</value>
+  </data>
+  <data name="AccountDetails" xml:space="preserve">
+    <value>অ্যাকাউন্টের বিশদ বিবরণ</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>যোগ করুন</value>
+  </data>
+  <data name="Addnew" xml:space="preserve">
+    <value>যোগ করুন</value>
+  </data>
+  <data name="Archive" xml:space="preserve">
+    <value>আর্কাইভ</value>
+  </data>
+  <data name="Assign" xml:space="preserve">
+    <value>নিযুক্ত</value>
+  </data>
+  <data name="AssignStudent" xml:space="preserve">
+    <value>নিযুক্ত ছাত্র-ছাত্রীর তালিকা </value>
+  </data>
+  <data name="AssignStudentClass" xml:space="preserve">
+    <value> শ্রেণীতে ছাত্র-ছাত্রীর নিযুক্ত করুন  </value>
+  </data>
+  <data name="Board" xml:space="preserve">
+    <value>বোর্ড</value>
+  </data>
+  <data name="BordUniversity" xml:space="preserve">
+    <value>বোর্ড/বিশ্ববিদ্যালয়</value>
+  </data>
+  <data name="ByDate" xml:space="preserve">
+    <value>তারিখ অনুসারে</value>
+  </data>
+  <data name="ByTeacher" xml:space="preserve">
+    <value>শিক্ষক-শিক্ষিকা দ্বারা</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>বন্ধ করুন</value>
+  </data>
+  <data name="Compulsory" xml:space="preserve">
+    <value>বাধ্যতামূলক</value>
+  </data>
+  <data name="DailyAttendence" xml:space="preserve">
+    <value>দৈনিক উপস্থিতি</value>
+  </data>
+  <data name="Degree" xml:space="preserve">
+    <value>ডিগ্রীর নাম </value>
+  </data>
+  <data name="DegreeName" xml:space="preserve">
+    <value>ডিগ্রীর নাম</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>স্থিতিকাল</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>শেষ তারিখ</value>
+  </data>
+  <data name="ExamAttendence" xml:space="preserve">
+    <value>পরীক্ষায় উপস্থিতি</value>
+  </data>
+  <data name="FatherPhoto" xml:space="preserve">
+    <value>পিতার ছবি</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>ফ্যাক্স</value>
+  </data>
+  <data name="GPAScale" xml:space="preserve">
+    <value>জিপিএ স্কেল</value>
+  </data>
+  <data name="Grade" xml:space="preserve">
+    <value>গ্রেড</value>
+  </data>
+  <data name="InstituteName" xml:space="preserve">
+    <value>প্রতিষ্ঠানের নাম</value>
+  </data>
+  <data name="Intime" xml:space="preserve">
+    <value>প্রবেশের সময়</value>
+  </data>
+  <data name="JoinDate" xml:space="preserve">
+    <value>যোগদানের তারিখ</value>
+  </data>
+  <data name="MotherPhoto" xml:space="preserve">
+    <value>মাতার ছবি  </value>
+  </data>
+  <data name="NationalIdNo" xml:space="preserve">
+    <value>জাতীয় পরিচয়পত্র</value>
+  </data>
+  <data name="Optional" xml:space="preserve">
+    <value>ঐচ্ছিক</value>
+  </data>
+  <data name="OtherInformation" xml:space="preserve">
+    <value>অন্যান্য তথ্য</value>
+  </data>
+  <data name="OutTime" xml:space="preserve">
+    <value>বাহির হওয়ার সময়</value>
+  </data>
+  <data name="PassingYear" xml:space="preserve">
+    <value>পাসের সাল</value>
+  </data>
+  <data name="PasswordandConfirmPasswordarenotsame" xml:space="preserve">
+    <value>পাসওয়ার্ড এবং নিশ্চিত পাসওয়ার্ড একই নয়</value>
+  </data>
+  <data name="PhysicallyDefect" xml:space="preserve">
+    <value>প্রতিবন্ধী কি না ?</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>পূর্ববর্তী</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>ফলাফল</value>
+  </data>
+  <data name="SonDaughterGrandchildofFreedomFighter" xml:space="preserve">
+    <value>মুক্তিযোদ্ধার সন্তান/ নাতি-নাতনী কি না ?</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>শুরুর তারিখ</value>
+  </data>
+  <data name="StudentAttendence" xml:space="preserve">
+    <value>ছাত্র-ছাত্রীর উপস্থিতি</value>
+  </data>
+  <data name="StudentPhoto" xml:space="preserve">
+    <value>ছাত্র-ছাত্রীর  ছবি</value>
+  </data>
+  <data name="SubjecttoStudent" xml:space="preserve">
+    <value>ছাত্র-ছাত্রীর বিষয় নির্ধারণ করুন</value>
+  </data>
+  <data name="TeacherAccountInformation" xml:space="preserve">
+    <value>শিক্ষক-শিক্ষিকার অ্যাকাউন্টের বিবরণ</value>
+  </data>
+  <data name="TeacherAttendence" xml:space="preserve">
+    <value>শিক্ষক-শিক্ষিকার  উপস্থিতি</value>
+  </data>
+  <data name="TeacherEducation" xml:space="preserve">
+    <value>শিক্ষক-শিক্ষিকার শিক্ষাগত যোগ্যতা</value>
+  </data>
+  <data name="TeacherEducationInformation" xml:space="preserve">
+    <value>শিক্ষক-শিক্ষিকার শিক্ষার তথ্য</value>
+  </data>
+  <data name="TeacherFatherInformation" xml:space="preserve">
+    <value>শিক্ষক-শিক্ষিকার পিতার তথ্য</value>
+  </data>
+  <data name="TeacherList" xml:space="preserve">
+    <value>শিক্ষক-শিক্ষিকার  তালিকা</value>
+  </data>
+  <data name="TeacherMotherInformation" xml:space="preserve">
+    <value>শিক্ষক-শিক্ষিকার মাতার তথ্য</value>
+  </data>
+  <data name="TeacherName" xml:space="preserve">
+    <value>শিক্ষক-শিক্ষিকার নাম</value>
+  </data>
+  <data name="TeacherPersonalInformation" xml:space="preserve">
+    <value>শিক্ষক-শিক্ষিকার ব্যক্তিগত তথ্য</value>
+  </data>
+  <data name="TeacherPhoto" xml:space="preserve">
+    <value>শিক্ষক-শিক্ষিকার ছবি</value>
+  </data>
+  <data name="TeacherPINNo" xml:space="preserve">
+    <value>পিন কোড </value>
+  </data>
+  <data name="TeacherTraining" xml:space="preserve">
+    <value>শিক্ষক-শিক্ষিকার প্রশিক্ষণ</value>
+  </data>
+  <data name="TeacherTrainingInformation" xml:space="preserve">
+    <value>শিক্ষক-শিক্ষিকার প্রশিক্ষণের তথ্য</value>
+  </data>
+  <data name="Topics" xml:space="preserve">
+    <value>বিষয়াবলী</value>
+  </data>
+  <data name="TrainingName" xml:space="preserve">
+    <value>প্রশিক্ষণের নাম</value>
+  </data>
+  <data name="Tribal" xml:space="preserve">
+    <value>উপজাতি কি না ?</value>
+  </data>
+  <data name="UnassignStudent" xml:space="preserve">
+    <value>ছাত্র-ছাত্রীর তালিকা</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>সম্পাদন করুন</value>
+  </data>
+  <data name="AddNewNotification" xml:space="preserve">
+    <value>নিউ নোটিফিকেশন সেটআপ করুন</value>
+  </data>
+  <data name="AttendenceType" xml:space="preserve">
+    <value>উপস্থিতির ধরন </value>
+  </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>অনুমোদন</value>
+  </data>
+  <data name="Body" xml:space="preserve">
+    <value>বিস্তারিত</value>
+  </data>
+  <data name="Button" xml:space="preserve">
+    <value>বাটন</value>
+  </data>
+  <data name="DateFormat" xml:space="preserve">
+    <value>তারিখ বিন্যাস</value>
+  </data>
+  <data name="DisplayEmail" xml:space="preserve">
+    <value>ইমেইল প্রদর্শন </value>
+  </data>
+  <data name="DisPlayName" xml:space="preserve">
+    <value>প্রদর্শনের নাম</value>
+  </data>
+  <data name="EmailConfiguration" xml:space="preserve">
+    <value>ইমেইল কনফিগারেশন</value>
+  </data>
+  <data name="EmailNotification" xml:space="preserve">
+    <value>ইমেইল নোটিফিকেশন </value>
+  </data>
+  <data name="EmailTemplete" xml:space="preserve">
+    <value>ইমেইল টেমপ্লেট</value>
+  </data>
+  <data name="EmailTempleteSetup" xml:space="preserve">
+    <value>ইমেইল টেমপ্লেট সেটআপ করুন</value>
+  </data>
+  <data name="EstablishedBy" xml:space="preserve">
+    <value>প্রতিষ্ঠিতা</value>
+  </data>
+  <data name="EstablishedYear" xml:space="preserve">
+    <value>প্রতিষ্ঠিত সাল</value>
+  </data>
+  <data name="GeneralSetting" xml:space="preserve">
+    <value>সাধারণ সেটিং</value>
+  </data>
+  <data name="GenerateReport" xml:space="preserve">
+    <value>রিপোর্ট বের করুন</value>
+  </data>
+  <data name="Notification" xml:space="preserve">
+    <value>নোটিফিকেশন</value>
+  </data>
+  <data name="NotificationSetting" xml:space="preserve">
+    <value>নোটিফিকেশন সেটিং</value>
+  </data>
+  <data name="NotificationTitle" xml:space="preserve">
+    <value>নোটিফিকেশনের শিরোনাম</value>
+  </data>
+  <data name="Panel" xml:space="preserve">
+    <value>প্যানেল</value>
+  </data>
+  <data name="Port" xml:space="preserve">
+    <value>পোর্ট</value>
+  </data>
+  <data name="ReplyEmail" xml:space="preserve">
+    <value>রিপ্লায় ইমেইল</value>
+  </data>
+  <data name="SchoolCode" xml:space="preserve">
+    <value>স্কুল কোড </value>
+  </data>
+  <data name="SchoolInformation" xml:space="preserve">
+    <value>স্কুলের তথ্য</value>
+  </data>
+  <data name="SchooName" xml:space="preserve">
+    <value>স্কুলের নাম </value>
+  </data>
+  <data name="SendEmail" xml:space="preserve">
+    <value>ইমেইল পাঠান</value>
+  </data>
+  <data name="SendSMS" xml:space="preserve">
+    <value>এসএমএস পাঠান</value>
+  </data>
+  <data name="Server" xml:space="preserve">
+    <value>সার্ভার</value>
+  </data>
+  <data name="SMSGetwaySetting" xml:space="preserve">
+    <value>এসএমএস গেটওয়ে সেটিং</value>
+  </data>
+  <data name="SMSTemplete" xml:space="preserve">
+    <value>এসএমএস টেমপ্লেট সেটআপ করুন</value>
+  </data>
+  <data name="SSLEnable" xml:space="preserve">
+    <value> এস.এস.এল. সক্রিয়</value>
+  </data>
+  <data name="Student" xml:space="preserve">
+    <value>ছাত্র-ছাত্রী</value>
+  </data>
+  <data name="Teacher" xml:space="preserve">
+    <value>শিক্ষক-শিক্ষিকা</value>
+  </data>
+  <data name="TemplateName" xml:space="preserve">
+    <value>টেমপ্লেটের নাম</value>
+  </data>
+  <data name="Theme" xml:space="preserve">
+    <value>বিষয়বস্তু</value>
+  </data>
+  <data name="TimeZone" xml:space="preserve">
+    <value>টাইম জোন</value>
+  </data>
+  <data name="Variables" xml:space="preserve">
+    <value>চলক</value>
+  </data>
+  <data name="ExpenseCategory" xml:space="preserve">
+    <value>ব্যয়ের ধরণ</value>
+  </data>
+  <data name="IncomeCategory" xml:space="preserve">
+    <value>আয়ের ধরণ</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>পরিমাণ (টাকা)</value>
+  </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>সংযুক্তি</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>নোট</value>
+  </data>
+  <data name="Expense" xml:space="preserve">
+    <value>ব্যয়</value>
+  </data>
+  <data name="FromDate" xml:space="preserve">
+    <value>শুরুর তারিখ</value>
+  </data>
+  <data name="Income" xml:space="preserve">
+    <value>আয়</value>
+  </data>
+  <data name="LeaveApplication" xml:space="preserve">
+    <value>ছুটির আবেদন</value>
+  </data>
+  <data name="ToDate" xml:space="preserve">
+    <value>শেষের তারিখ</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>ড্যাশবোর্ড </value>
+  </data>
+  <data name="SubmitResult" xml:space="preserve">
+    <value>ফলাফল সংরক্ষণ করুন </value>
+  </data>
+  <data name="NoticeAttachment" xml:space="preserve">
+    <value>সংযুক্তি</value>
+  </data>
+</root>

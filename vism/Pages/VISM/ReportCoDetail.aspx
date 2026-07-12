@@ -1,0 +1,178 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/AdminMaster.master" AutoEventWireup="true" CodeFile="ReportCoDetail.aspx.cs" Inherits="Pages_VISM_ReportCoDetail" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphMain" runat="Server">
+    <div class="form-horizontal">
+        <div class="form-group">
+            <div class="col-md-6">
+                <div class="panel panel-info">
+                    <div class="panel-heading" style="height: 35px">
+                        <div class="panel-title" style="text-align: center; margin-top: -7px">Sender Details (VISM)</div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+
+                            <label class="col-sm-4">Location</label>
+                            <div class="col-sm-8">
+                                <asp:DropDownList runat="server" Enabled="True" ID="ddlSendLoc" CssClass="form-control" Width="100%" DataValueField="ID" DataTextField="TEXT" AutoPostBack="True" OnSelectedIndexChanged="ddlSendLoc_OnSelectedIndexChanged" />
+                              <%--  <asp:RequiredFieldValidator runat="server" ControlToValidate="ddlSendLoc" InitialValue="" ID="RequiredFieldValidator1" ClientIDMode="Static" Display="Dynamic" ErrorMessage="This is required field." ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>--%>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4">VISM Warehouse</label>
+                            <div class="col-sm-8">
+                                <asp:DropDownList runat="server" ClientIDMode="Static" Enabled="False" ID="ddlSendWh" CssClass="form-control" Width="100%" DataValueField="ID" DataTextField="TEXT" AutoPostBack="True" OnSelectedIndexChanged="ddlSendWh_OnSelectedIndexChanged" />
+                          <%--      <asp:RequiredFieldValidator runat="server" ControlToValidate="ddlSendWh" InitialValue="" ID="RequiredFieldValidator2" ClientIDMode="Static" Display="Dynamic" ErrorMessage="This is required field." ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>--%>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4">Company/Workshop </label>
+                            <div class="col-sm-8">
+                                <asp:DropDownList runat="server" Enabled="False" ID="ddlSendCom" CssClass="form-control" Width="100%" DataValueField="ID" DataTextField="TEXT" />
+                               <%-- <asp:RequiredFieldValidator runat="server" ControlToValidate="ddlSendCom" InitialValue="" ID="RequiredFieldValidator3" ClientIDMode="Static" Display="Dynamic" ErrorMessage="This is required field." ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>--%>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-4">From Date</label>
+                            <div class="col-sm-8">
+                                <asp:TextBox ID="tbxfromdate" runat="server" placeholder="Enter From Date" CssClass="form-control" autocomplete="off"></asp:TextBox>
+                                <ajaxToolkit:CalendarExtender ID="CalendarExtender3" runat="server" Format="dd/MM/yyyy" TargetControlID="tbxfromdate"></ajaxToolkit:CalendarExtender>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4">To Date</label>
+                            <div class="col-sm-8">
+                                <asp:TextBox ID="tbxtodate" runat="server" placeholder="Enter To Date" CssClass="form-control" autocomplete="off"></asp:TextBox>
+                                <ajaxToolkit:CalendarExtender ID="CalendarExtender4" runat="server" Format="dd/MM/yyyy" TargetControlID="tbxtodate"></ajaxToolkit:CalendarExtender>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-info">
+                    <div class="panel-heading" style="height: 35px">
+                        <div class="panel-title" style="text-align: center; margin-top: -7px">Receiver Details (VISM)</div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label class="col-sm-4">CO Unit </label>
+                            <div class="col-sm-8">
+                                <asp:TextBox ID="tbxRecVeh" runat="server" placeholder="Start typing vehicle reg no" CssClass="form-control" AutoPostBack="True" OnTextChanged="tbxRecVeh_OnTextChanged"></asp:TextBox>
+                                <ajaxToolkit:AutoCompleteExtender ServiceMethod="SearchVehicle"
+                                    MinimumPrefixLength="1"
+                                    CompletionInterval="100" EnableCaching="false" CompletionSetCount="10"
+                                    TargetControlID="tbxRecVeh"
+                                    ID="AutoCompleteExtender2" runat="server" FirstRowSelected="true">
+                                </ajaxToolkit:AutoCompleteExtender>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4">Location</label>
+                            <div class="col-sm-8">
+                                <asp:DropDownList runat="server" Enabled="False" ID="ddlRecvLoc" CssClass="form-control" Width="100%" DataValueField="ID" DataTextField="TEXT" />
+                                <%--<asp:RequiredFieldValidator runat="server" ControlToValidate="ddlRecvLoc" InitialValue="" ID="RequiredFieldValidator4"  ClientIDMode="Static" Display="Dynamic" ErrorMessage="This is required field." ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>--%>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4">Company/Workshop </label>
+                            <div class="col-sm-8">
+                                <asp:DropDownList runat="server" Enabled="False" ID="ddlRecvCom" CssClass="form-control" Width="100%" DataValueField="ID" DataTextField="TEXT" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-4">Vehicle REGNO </label>
+                            <div class="col-sm-8">
+                                <asp:DropDownList runat="server" Enabled="False" ID="ddlVehicleRegNo" CssClass="form-control" Width="100%" DataValueField="ID" DataTextField="TEXT" />
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         
+        <div class="form-group">
+            <div class="col-sm-12 text-center">
+                <asp:Button ID="Button1" runat="server" CssClass="btn btn-success" Text="Download As Normal Excel" OnClick="btndownloadNormalExcel_OnClick" />
+<%--                <asp:Button ID="Button2" runat="server" CssClass="btn btn-success" Text="Download As Excel" OnClick="btndownloadExcel_OnClick" />
+                <asp:Button ID="Button3" runat="server" CssClass="btn btn-success" Text="Download As Pdf" OnClick="btnDownloadPdf_OnClick" />
+                <asp:Button ID="Button4" runat="server" CssClass="btn btn-success" Text="View As Pdf" OnClick="btnOpenPdf_OnClick" ClientIDMode="Static" />--%>
+
+                <%--<asp:Button ID="Button5" runat="server" CssClass="btn btn-warning" Text="Download Excel with Mergin" OnClick="btnMergine_OnClick" />--%>
+                <asp:Button ID="Button6" runat="server" CssClass="btn btn-default" CausesValidation="False" Text="Reset" OnClick="btnReset_OnClick" />
+                <%--<asp:Button ID="btnExport" runat="server" ClientIDMode="Static" Text="Export" CssClass="btn btn-primary" OnClick="btnExport_OnClickport_OnClick" />--%>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-12 text-center">
+                <asp:Panel ID="Panel2" runat="server" Width="100%">
+                    <asp:GridView ID="GridView2" HeaderStyle-BackColor="#3AC0F2" HeaderStyle-ForeColor="White"
+                        RowStyle-BackColor="#A1DCF2" AlternatingRowStyle-BackColor="White" Width="100%" AlternatingRowStyle-ForeColor="#000"
+                        runat="server" AutoGenerateColumns="false">
+                        <Columns>
+                            <asp:BoundField DataField="WH" HeaderText="WH" />
+                            <asp:BoundField DataField="JOBID" HeaderText="JOB ID" />
+                            <asp:BoundField DataField="COUNIT" HeaderText="REGNO" />
+                            <asp:BoundField DataField="MODELNAME" HeaderText="MODELNAME" />
+                            <asp:BoundField DataField="servicetype" HeaderText="SERVICE" />
+                            <asp:BoundField DataField="COMPANY" HeaderText="COMPANY" /> 
+                            <asp:BoundField DataField="CUSTOMERNAME" HeaderText="CUSTOMER" />
+                            <asp:BoundField DataField="CUSCATEGORY" HeaderText="CO CATEGORY" />
+                            <asp:BoundField DataField="TRDATE" HeaderText="CO_DATE"/>
+                            <asp:BoundField DataField="ID" HeaderText="CO_ID" />
+                            <asp:BoundField DataField="CATEGORY" HeaderText="CATEGORY" />
+                            <asp:BoundField DataField="ITEMCODE" HeaderText="ITEMCODE" />
+                            <asp:BoundField DataField="ITEMNAME" HeaderText="ITEMNAME" />      
+                            <asp:BoundField DataField="UNITNAME" HeaderText="UNIT" />                           
+                            <asp:BoundField DataField="RATE" HeaderText="RATE" />
+                            <asp:BoundField DataField="QTY" HeaderText="QTY" />
+                            <asp:BoundField DataField="AMOUNT" HeaderText="AMOUNT" />
+                        </Columns>
+                    </asp:GridView>
+
+                    <asp:GridView ID="GridView1" HeaderStyle-BackColor="#3AC0F2" HeaderStyle-ForeColor="White"
+                        RowStyle-BackColor="#A1DCF2" AlternatingRowStyle-BackColor="White" Width="100%" AlternatingRowStyle-ForeColor="#000"
+                        runat="server" AutoGenerateColumns="false">
+                        <Columns>
+                            <asp:BoundField DataField="WH" HeaderText="WH" />
+                            <asp:BoundField DataField="COUNIT" HeaderText="REGNO" />
+                            <asp:BoundField DataField="MODELNAME" HeaderText="MODELNAME" />
+                            <asp:BoundField DataField="servicetype" HeaderText="SERVICE" />
+                            <asp:BoundField DataField="COMPANY" HeaderText="COMPANY" />
+                            <asp:BoundField DataField="CATEGORY" HeaderText="CATEGORY" />
+                            <asp:BoundField DataField="ITEMCODE" HeaderText="ITEMCODE" />
+                            <asp:BoundField DataField="ITEMNAME" HeaderText="ITEMNAME" />
+                            <asp:BoundField DataField="TRDATE" HeaderText="CO_DATE"/>
+                            <asp:BoundField DataField="ID" HeaderText="CO_ID" />
+                            <asp:BoundField DataField="UNITNAME" HeaderText="UNIT" />
+                            <asp:BoundField DataField="CUSTOMERNAME" HeaderText="CUSTOMER" />
+                            <asp:BoundField DataField="CUSCATEGORY" HeaderText="CO CATEGORY" />
+                            <asp:BoundField DataField="RATE" HeaderText="RATE" />
+                            <asp:BoundField DataField="QTY" HeaderText="QTY" />
+                            <asp:BoundField DataField="AMOUNT" HeaderText="AMOUNT" />
+                            <asp:BoundField DataField="MRATE" HeaderText="MARGIN RATE" />
+                            <asp:BoundField DataField="MQTY" HeaderText="M QTY" />
+                            <asp:BoundField DataField="MAMOUNT" HeaderText="M AMOUNT" />
+                        </Columns>
+                    </asp:GridView>
+                </asp:Panel>
+            </div>
+        </div>
+    </div>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="script" runat="Server">
+</asp:Content>
+

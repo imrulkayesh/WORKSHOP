@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsPrintBill" targetNamespace="http://tempuri.org/DsPrintBill.xsd" xmlns:mstns="http://tempuri.org/DsPrintBill.xsd" xmlns="http://tempuri.org/DsPrintBill.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsPrintBill" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DsPrintBill" msprop:Generator_UserDSName="DsPrintBill">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DtPrintBill" msprop:Generator_TableClassName="DtPrintBillDataTable" msprop:Generator_TableVarName="tableDtPrintBill" msprop:Generator_TablePropName="DtPrintBill" msprop:Generator_RowDeletingName="DtPrintBillRowDeleting" msprop:Generator_RowChangingName="DtPrintBillRowChanging" msprop:Generator_RowEvHandlerName="DtPrintBillRowChangeEventHandler" msprop:Generator_RowDeletedName="DtPrintBillRowDeleted" msprop:Generator_UserTableName="DtPrintBill" msprop:Generator_RowChangedName="DtPrintBillRowChanged" msprop:Generator_RowEvArgName="DtPrintBillRowChangeEvent" msprop:Generator_RowClassName="DtPrintBillRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WORKSHOP" msprop:Generator_ColumnVarNameInTable="columnWORKSHOP" msprop:Generator_ColumnPropNameInRow="WORKSHOP" msprop:Generator_ColumnPropNameInTable="WORKSHOPColumn" msprop:Generator_UserColumnName="WORKSHOP" type="xs:string" minOccurs="0" />
+              <xs:element name="ADDRESS" msprop:Generator_ColumnVarNameInTable="columnADDRESS" msprop:Generator_ColumnPropNameInRow="ADDRESS" msprop:Generator_ColumnPropNameInTable="ADDRESSColumn" msprop:Generator_UserColumnName="ADDRESS" type="xs:string" minOccurs="0" />
+              <xs:element name="BILLNO" msprop:Generator_ColumnVarNameInTable="columnBILLNO" msprop:Generator_ColumnPropNameInRow="BILLNO" msprop:Generator_ColumnPropNameInTable="BILLNOColumn" msprop:Generator_UserColumnName="BILLNO" type="xs:string" minOccurs="0" />
+              <xs:element name="JOBID" msprop:Generator_ColumnVarNameInTable="columnJOBID" msprop:Generator_ColumnPropNameInRow="JOBID" msprop:Generator_ColumnPropNameInTable="JOBIDColumn" msprop:Generator_UserColumnName="JOBID" type="xs:string" minOccurs="0" />
+              <xs:element name="REGNO" msprop:Generator_ColumnVarNameInTable="columnREGNO" msprop:Generator_ColumnPropNameInRow="REGNO" msprop:Generator_ColumnPropNameInTable="REGNOColumn" msprop:Generator_UserColumnName="REGNO" type="xs:string" minOccurs="0" />
+              <xs:element name="MODELNAME" msprop:Generator_ColumnVarNameInTable="columnMODELNAME" msprop:Generator_ColumnPropNameInRow="MODELNAME" msprop:Generator_ColumnPropNameInTable="MODELNAMEColumn" msprop:Generator_UserColumnName="MODELNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="CHASSISNO" msprop:Generator_ColumnVarNameInTable="columnCHASSISNO" msprop:Generator_ColumnPropNameInRow="CHASSISNO" msprop:Generator_ColumnPropNameInTable="CHASSISNOColumn" msprop:Generator_UserColumnName="CHASSISNO" type="xs:string" minOccurs="0" />
+              <xs:element name="ENGINENO" msprop:Generator_ColumnVarNameInTable="columnENGINENO" msprop:Generator_ColumnPropNameInRow="ENGINENO" msprop:Generator_ColumnPropNameInTable="ENGINENOColumn" msprop:Generator_UserColumnName="ENGINENO" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTOMERNAME" msprop:Generator_ColumnVarNameInTable="columnCUSTOMERNAME" msprop:Generator_ColumnPropNameInRow="CUSTOMERNAME" msprop:Generator_ColumnPropNameInTable="CUSTOMERNAMEColumn" msprop:Generator_UserColumnName="CUSTOMERNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="MOBILE" msprop:Generator_ColumnVarNameInTable="columnMOBILE" msprop:Generator_ColumnPropNameInRow="MOBILE" msprop:Generator_ColumnPropNameInTable="MOBILEColumn" msprop:Generator_UserColumnName="MOBILE" type="xs:string" minOccurs="0" />
+              <xs:element name="DRIVERNAME" msprop:Generator_ColumnVarNameInTable="columnDRIVERNAME" msprop:Generator_ColumnPropNameInRow="DRIVERNAME" msprop:Generator_ColumnPropNameInTable="DRIVERNAMEColumn" msprop:Generator_UserColumnName="DRIVERNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="DRIVERMOBILE" msprop:Generator_ColumnVarNameInTable="columnDRIVERMOBILE" msprop:Generator_ColumnPropNameInRow="DRIVERMOBILE" msprop:Generator_ColumnPropNameInTable="DRIVERMOBILEColumn" msprop:Generator_UserColumnName="DRIVERMOBILE" type="xs:string" minOccurs="0" />
+              <xs:element name="COMPANYNAME" msprop:Generator_ColumnVarNameInTable="columnCOMPANYNAME" msprop:Generator_ColumnPropNameInRow="COMPANYNAME" msprop:Generator_ColumnPropNameInTable="COMPANYNAMEColumn" msprop:Generator_UserColumnName="COMPANYNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="SERVICETYPE" msprop:Generator_ColumnVarNameInTable="columnSERVICETYPE" msprop:Generator_ColumnPropNameInRow="SERVICETYPE" msprop:Generator_ColumnPropNameInTable="SERVICETYPEColumn" msprop:Generator_UserColumnName="SERVICETYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="ITEMNAME" msprop:Generator_ColumnVarNameInTable="columnITEMNAME" msprop:Generator_ColumnPropNameInRow="ITEMNAME" msprop:Generator_ColumnPropNameInTable="ITEMNAMEColumn" msprop:Generator_UserColumnName="ITEMNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="UNIT" msprop:Generator_ColumnVarNameInTable="columnUNIT" msprop:Generator_ColumnPropNameInRow="UNIT" msprop:Generator_ColumnPropNameInTable="UNITColumn" msprop:Generator_UserColumnName="UNIT" type="xs:string" minOccurs="0" />
+              <xs:element name="MARGINRATE" msprop:Generator_ColumnVarNameInTable="columnMARGINRATE" msprop:Generator_ColumnPropNameInRow="MARGINRATE" msprop:Generator_ColumnPropNameInTable="MARGINRATEColumn" msprop:Generator_UserColumnName="MARGINRATE" type="xs:string" minOccurs="0" />
+              <xs:element name="QTY" msprop:Generator_ColumnVarNameInTable="columnQTY" msprop:Generator_ColumnPropNameInRow="QTY" msprop:Generator_ColumnPropNameInTable="QTYColumn" msprop:Generator_UserColumnName="QTY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AMOUNT" msprop:Generator_ColumnVarNameInTable="columnAMOUNT" msprop:Generator_ColumnPropNameInRow="AMOUNT" msprop:Generator_ColumnPropNameInTable="AMOUNTColumn" msprop:Generator_UserColumnName="AMOUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CHARGETYPE" msprop:Generator_ColumnVarNameInTable="columnCHARGETYPE" msprop:Generator_ColumnPropNameInRow="CHARGETYPE" msprop:Generator_ColumnPropNameInTable="CHARGETYPEColumn" msprop:Generator_UserColumnName="CHARGETYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="DISCOUNT" msprop:Generator_ColumnVarNameInTable="columnDISCOUNT" msprop:Generator_ColumnPropNameInRow="DISCOUNT" msprop:Generator_ColumnPropNameInTable="DISCOUNTColumn" msprop:Generator_UserColumnName="DISCOUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RATE" msprop:Generator_ColumnVarNameInTable="columnRATE" msprop:Generator_ColumnPropNameInRow="RATE" msprop:Generator_ColumnPropNameInTable="RATEColumn" msprop:Generator_UserColumnName="RATE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MARGIN" msprop:Generator_ColumnVarNameInTable="columnMARGIN" msprop:Generator_ColumnPropNameInRow="MARGIN" msprop:Generator_ColumnPropNameInTable="MARGINColumn" msprop:Generator_UserColumnName="MARGIN" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

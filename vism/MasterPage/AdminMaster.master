@@ -1,0 +1,163 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="MasterPage_AdminMaster" %>
+
+
+<%@ Register TagName="AdminMenu" TagPrefix="UC" Src="~/UserControl/AdminMenu.ascx" %>
+<%@ Register TagName="Header" TagPrefix="UC" Src="~/UserControl/AdminHeader.ascx" %>
+<%@ Register TagName="Message" TagPrefix="UC" Src="~/UserControl/MessagePanel.ascx" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <%--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />--%>
+    <%--<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />--%>
+
+    <link href="<%# Page.ResolveClientUrl("~/Content/font-awesome-4.6.3/css/font-awesome.min.css") %>" rel="stylesheet"
+        type="text/css" />
+    <link href="<%# Page.ResolveClientUrl("~/Content/ionicons-2.0.1/css/ionicons.min.css") %>" rel="stylesheet"
+        type="text/css" />
+    <link href="<%# Page.ResolveClientUrl("~/Content/Styles/bootstrap.min.css") %>" rel="stylesheet"
+        type="text/css" />
+    <link href="<%# Page.ResolveClientUrl("~/Content/Styles/jquery-jvectormap-1.2.2.css") %>" rel="stylesheet"
+        type="text/css" />
+    <link href="<%# Page.ResolveClientUrl("~/Content/Styles/AdminLTE.css") %>" rel="stylesheet"
+        type="text/css" />
+    <link href="<%# Page.ResolveClientUrl("~/Content/Styles/_all-skins.min.css") %>" rel="stylesheet"
+        type="text/css" />
+    <link href="<%# Page.ResolveClientUrl("~/Content/Styles/select2.min.css") %>" rel="stylesheet"
+        type="text/css" />
+    <link href="<%# Page.ResolveClientUrl("~/Content/Styles/jquery.dataTables.min.css") %>" rel="stylesheet"
+        type="text/css" />
+    <link href="<%# Page.ResolveClientUrl("~/Content/Styles/jquery.dataTables_themeroller.css") %>" rel="stylesheet"
+        type="text/css" />
+    <link href="<%# Page.ResolveClientUrl("~/Content/Styles/Table.css") %>" rel="stylesheet"
+        type="text/css" />
+    <link href="<%# Page.ResolveClientUrl("~/Content/Styles/Custom.css") %>" rel="stylesheet"
+        type="text/css" />
+    <link href="<%# Page.ResolveClientUrl("~/Content/DateTimePeaker/css/bootstrap-datetimepicker.min.css") %>" rel="stylesheet"
+        type="text/css" />
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" EnablePageMethods="true" runat="server">
+        </asp:ScriptManager>
+        <div class="wrapper">
+            <UC:Header ID="Header" runat="server" />
+            <UC:AdminMenu ID="leftMenu" runat="server" />
+            <div class="content-wrapper">
+                <!-- Main content -->
+                <section class="content">
+                    <!-- Info boxes -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <ol class="breadcrumb admin-header">
+                                        <li><a href="../../Pages/Admin/Default.aspx"><i class="fa fa-home"></i>
+                                            Home
+                                        </a></li>
+                                        <li class="active">
+                                            <asp:Literal ID="litPage" runat="server"></asp:Literal></li>
+                                    </ol>
+                                </div>
+                                <div class="panel-body" style="height: auto; min-height: 800px;">
+                                    <div class="message">
+                                        <UC:Message ID="MessagePanel1" ClientIDMode="Static" runat="server" />
+                                    </div>
+                                    <asp:ContentPlaceHolder ID="cphMain" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- /.content -->
+            </div>
+            <!-- /.content-wrapper -->
+
+            <footer class="main-footer">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <strong>Copyright &copy;<asp:Label ID="lblYear" runat="server" />
+                            <a href="#">Workshop</a>.</strong> All rights reserved.
+                    </div>
+                    <div class="col-lg-4">
+                        <asp:DropDownList ID="ddlLanguage" class="form-control" runat="server" OnSelectedIndexChanged="ddlLanguage_SelectedIndexChanged" AutoPostBack="true">
+                            <asp:ListItem Value="en-US" Text="English"></asp:ListItem>
+                            <asp:ListItem Value="bn-BD" Text="Bangla"></asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+                </div>
+            </footer>
+            <div class="control-sidebar-bg"></div>
+        </div>
+        <script type="text/jscript" src="../../Content/Scripts/jquery-2.1.3.min.js"></script>
+        <script type="text/jscript" src="../../Content/Scripts/bootstrap.min.js"></script>
+        <script type="text/jscript" src="../../Content/Scripts/script.js"></script>
+        <script type="text/jscript" src="../../Content/Scripts/fastclick.min.js"></script>
+        <script type="text/jscript" src="../../Content/Scripts/app.min.js"></script>
+        <script type="text/jscript" src="../../Content/Scripts/jquery.sparkline.min.js"></script>
+        <script type="text/jscript" src="../../Content/Scripts/jquery-jvectormap-1.2.2.min.js"></script>
+        <script type="text/jscript" src="../../Content/Scripts/jquery.slimscroll.min.js"></script>
+        <script type="text/jscript" src="../../Content/Scripts/Chart.min.js"></script>
+        <%--<script type="text/jscript" src="../../Scripts/dashboard2.js"></script>--%>
+        <script type="text/jscript" src="../../Content/Scripts/demo.js"></script>
+        <script type="text/jscript" src="../../Content/Scripts/dataTables.bootstrap.min.js"></script>
+        <script type="text/jscript" src="../../Content/Scripts/jquery.dataTables.min.js"></script>
+        <%--<script src="../../Content/jquery/moment-2.8.1.min.js" type="text/javascript"></script>
+        <script src="../Content/jquery/jquery-2.1.1.js"></script>
+        <script src="../../Content/jquery/jquery-ui-1.11.1.js" type="text/javascript"></script>
+        <script src="../../Content/jquery/jquery.qtip-2.2.0.js" type="text/javascript"></script>
+        <script src="../../Content/fullcalendar/fullcalendar-2.0.3.js" type="text/javascript"></script>
+        <script src="../../Content/scripts/calendarscript.js" type="text/javascript"></script>--%>
+        <script src="../../Content/Scripts/fontawesome-iconpicker.js"></script>
+        <script src="../../Content/Scripts/select2.full.min.js"></script>
+        <%--<script src="../../Content/Scripts/jspdf.min.js"></script>--%>
+        <script src="../../Content/Scripts/html2canvas.min.js"></script>
+        <%--<script src="../../JS/print.js"></script>--%>
+        <script src="../../Content/JS/Common.js"></script>
+        
+        <%--bellows are added  by enamul--%>
+       <script src="../../Content/DateTimePeaker/js/moment.min.js"></script>
+    <script src="../../Content/DateTimePeaker/js/bootstrap-datetimepicker.min.js"></script>
+        <script src="../../Content/Inputmask4/dist/jquery.inputmask.bundle.js"></script>
+
+        <script type="text/javascript">
+         Sys.Application.add_load(function () {
+            $('.dp1').datetimepicker({
+                format: 'DD-MM-YYYY',
+                defaultDate: 'moment', //auto select current date
+                //showClear: true,
+                showClose: true,
+                showTodayButton: true,
+                //toolbarPlacement: 'bottom',
+                allowInputToggle: true
+                
+
+            });
+
+            $('.tp1').datetimepicker({
+                format: 'hh A',
+                defaultDate: 'moment', //auto select current date
+                //showClear: true,
+                showClose: true,
+                showTodayButton: true,
+                //toolbarPlacement: 'bottom',
+                allowInputToggle: true
+
+
+            });
+            
+        });
+
+    </script>
+        <asp:ContentPlaceHolder ID="script" runat="server"></asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

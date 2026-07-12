@@ -1,0 +1,27 @@
+alter table art_program_artist add is_paid bit not null default 'false';
+create sequence art_payment_id_seq as bigint start with 1;
+----------------------------------------------------------------------------------
+alter table art_program_artist add payment_id bigint 
+constraint fk_art_program_artist_payment_id foreign key references art_artist_payment(payment_id);
+alter table art_program_artist add is_send_sms bit not null default 'false';
+
+
+
+create table art_artist_payment
+(
+ payment_id bigint not null constraint pk_art_payment_id primary key default next value for art_payment_id_seq,
+ payment_date datetime not null ,
+ total_amount float not null default 0,
+ bank_type char not null default 'O',
+ bank_id	numeric(3, 0) constraint fk_art_artist_payment_bankid foreign key references set_bank(bank_id),
+ payment_by	int not null constraint fk_art_artist_payment_payment_by foreign key references set_employee(employee_id),
+ note_file_path	varchar(120),
+ excel_file_path	varchar(120),
+ pdf_file_path	varchar(120),
+ remarks	nvarchar(120),
+ is_deleted smallint not null default 0,
+ user_id_insert int not null constraint fk_art_artist_payment_user_id_insert foreign key references set_employee(employee_id),
+ date_insert datetime not null default getdate()
+ );
+
+

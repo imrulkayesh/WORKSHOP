@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VehicleMaster" targetNamespace="http://tempuri.org/VehicleMaster.xsd" xmlns:mstns="http://tempuri.org/VehicleMaster.xsd" xmlns="http://tempuri.org/VehicleMaster.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="VehicleMaster" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="VehicleMaster" msprop:Generator_UserDSName="VehicleMaster">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VehicleMaster" msprop:Generator_TableClassName="VehicleMasterDataTable" msprop:Generator_TableVarName="tableVehicleMaster" msprop:Generator_TablePropName="_VehicleMaster" msprop:Generator_RowDeletingName="VehicleMasterRowDeleting" msprop:Generator_RowChangingName="VehicleMasterRowChanging" msprop:Generator_RowEvHandlerName="VehicleMasterRowChangeEventHandler" msprop:Generator_RowDeletedName="VehicleMasterRowDeleted" msprop:Generator_UserTableName="VehicleMaster" msprop:Generator_RowChangedName="VehicleMasterRowChanged" msprop:Generator_RowEvArgName="VehicleMasterRowChangeEvent" msprop:Generator_RowClassName="VehicleMasterRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CHASSISNO" msprop:Generator_ColumnVarNameInTable="columnCHASSISNO" msprop:Generator_ColumnPropNameInRow="CHASSISNO" msprop:Generator_ColumnPropNameInTable="CHASSISNOColumn" msprop:Generator_UserColumnName="CHASSISNO" type="xs:string" minOccurs="0" />
+              <xs:element name="BARCODE" msprop:Generator_ColumnVarNameInTable="columnBARCODE" msprop:Generator_ColumnPropNameInRow="BARCODE" msprop:Generator_ColumnPropNameInTable="BARCODEColumn" msprop:Generator_UserColumnName="BARCODE" type="xs:string" minOccurs="0" />
+              <xs:element name="MODELNAME" msprop:Generator_ColumnVarNameInTable="columnMODELNAME" msprop:Generator_ColumnPropNameInRow="MODELNAME" msprop:Generator_ColumnPropNameInTable="MODELNAMEColumn" msprop:Generator_UserColumnName="MODELNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="MANUFACTURINGYEAR" msprop:Generator_ColumnVarNameInTable="columnMANUFACTURINGYEAR" msprop:Generator_ColumnPropNameInRow="MANUFACTURINGYEAR" msprop:Generator_ColumnPropNameInTable="MANUFACTURINGYEARColumn" msprop:Generator_UserColumnName="MANUFACTURINGYEAR" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
