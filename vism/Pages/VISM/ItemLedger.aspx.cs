@@ -221,35 +221,69 @@ public partial class Pages_VISM_ItemLedger : BasePage
         return dt;
     }
 
-    protected int ID = 0;
-    protected int totalAmt = 0;
-    private int _rw;
+    //protected int ID = 0;
+    //protected int totalAmt = 0;
+    //private int _rw;
+
+    protected decimal ID = 0;
+    protected decimal totalAmt = 0;
+    private int _rw = 0;
 
 
+
+    //protected void rptMain_ItemBound(object sender, RepeaterItemEventArgs e)
+    //{
+
+    //    if (e.Item.ItemType == ListItemType.Header)
+    //    {
+    //        Repeater headerRpt = e.Item.FindControl("hdrRpt") as Repeater;
+    //        headerRpt.DataSource = GetHeader(RptData());
+    //        headerRpt.DataBind();
+    //    }
+    //    else if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
+    //    {
+
+    //        Repeater bodyRpt = e.Item.FindControl("bdyRpt") as Repeater;
+
+    //        bodyRpt.DataSource = DtToList(_rw, RptData());
+
+    //        bodyRpt.DataBind();
+    //        _rw++;
+    //        //ID+= Convert.ToInt32(((DataRowView)e.Item.DataItem).Row.ItemArray[0]);
+    //        totalAmt += Convert.ToInt32(((DataRowView)e.Item.DataItem).Row.ItemArray[12]);
+    //    }
+
+    //}
 
     protected void rptMain_ItemBound(object sender, RepeaterItemEventArgs e)
     {
-
         if (e.Item.ItemType == ListItemType.Header)
         {
             Repeater headerRpt = e.Item.FindControl("hdrRpt") as Repeater;
             headerRpt.DataSource = GetHeader(RptData());
             headerRpt.DataBind();
         }
-        else if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
+        else if (e.Item.ItemType == ListItemType.Item ||
+                 e.Item.ItemType == ListItemType.AlternatingItem)
         {
-
             Repeater bodyRpt = e.Item.FindControl("bdyRpt") as Repeater;
 
             bodyRpt.DataSource = DtToList(_rw, RptData());
-
             bodyRpt.DataBind();
-            _rw++;
-            //ID+= Convert.ToInt32(((DataRowView)e.Item.DataItem).Row.ItemArray[0]);
-            totalAmt += Convert.ToInt32(((DataRowView)e.Item.DataItem).Row.ItemArray[12]);
-        }
 
+            _rw++;
+
+            // Safely convert Oracle NUMBER to Decimal
+            object value = ((DataRowView)e.Item.DataItem).Row.ItemArray[12];
+
+            if (value != DBNull.Value && value != null)
+            {
+                totalAmt += Convert.ToDecimal(value);
+            }
+        }
     }
+
+
     public static string[] GetHeader(DataTable dt)
     {
         List<string> myList = new List<string>();
